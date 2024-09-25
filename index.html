@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>For Loop</title>
+  </head>
+  <body>
+    <script>
+      // EVEN NUMBERS
+      for (let even = 2; even <= 18; even += 2) {
+        document.write(even);
+      }
+
+      document.write("<br>");
+
+      // SUM OF NUMBERS FROM 1-100
+      for (let i = 0; i <= 100; i++) {
+        document.write(i);
+      }
+      document.write("<br>");
+
+      //MULTIPLICATION TABLE
+      for (let i = 1; i <= 10; i++) {
+        for (let h = 1; h <= 10; h++) {
+          document.write(i * h);
+          document.write("<br>");
+        }
+      }
+
+      //Reversing Array
+      let x = [1, 2, 3, 4, 5];
+      let y = [];
+
+      for (let i = 4; i >= 0; i--) {
+        y.push(x[i]);
+      }
+      document.write(y);
+      document.write("<br>");
+
+      //Taking input
+      let message = prompt("Enter your message: ");
+
+      for (let messageOne = 0; messageOne < 3; messageOne++) {
+        document.write(message);
+      }
+
+      //FizzBuzz
+      for (let x = 1; x <= 100; x++) {
+        if (x % 3 == 0 && x % 5 == 0) {
+          document.write("fizzbuzz ");
+        } else if (x % 3 == 0) {
+          document.write("fizz ");
+        } else if (x % 5 == 0) {
+          document.write("buzz ");
+        } else {
+          document.write(x + " ");
+        }
+      }
+
+      //Taking strings as input
+      let word = prompt("Say a word: ");
+      
+    </script>
+  </body>
+</html>
